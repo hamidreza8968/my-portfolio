@@ -1,7 +1,4 @@
-type ButtonProps = {
-    label: string;
-    onClick?: () => void;
-};
+import {ButtonProps} from "@/stories/Button";
 
 export default function Button({ label, onClick }: ButtonProps) {
     return (
