@@ -49,7 +49,7 @@ export default async function Home() {
             <Navbar logo={{variant: 'text', text: "AA"}} navigationItems={navigationItems} className='bg-blue-500'/>
 
             <main>
-                <Section className="bg-gray-300">
+                <Section className="">
                     <Container>
                         <Hero/>
                     </Container>

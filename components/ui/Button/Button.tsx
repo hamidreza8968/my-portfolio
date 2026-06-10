@@ -1,10 +1,15 @@
-import {ButtonProps} from "@/stories/Button";
+import { ButtonProps } from "./Button.types";
+import { buttonBase, buttonVariants } from "./button.variants";
 
-export default function Button({ label, onClick }: ButtonProps) {
+export default function Button({
+                                   label,
+                                   onClick,
+                                   variant = "primary",
+                               }: ButtonProps) {
     return (
         <button
-            className="px-16 py-2 bg-blue-500 text-white rounded-lg"
             onClick={onClick}
+            className={`${buttonBase} ${buttonVariants[variant]}`}
         >
             {label}
         </button>

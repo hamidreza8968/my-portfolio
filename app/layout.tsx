@@ -17,12 +17,14 @@ export const metadata: Metadata = {
     description: "Portfolio",
 };
 
-export default function RootLayout({children}: { children: React.ReactNode }) {
+export default function RootLayout({
+                                       children,
+                                   }: {
+    children: React.ReactNode;
+}) {
     return (
         <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
-        <body className="min-h-full bg-stone-50 text-zinc-900 antialiased">
-        {children}
-        </body>
+        <body>{children}</body>
         </html>
     );
 }

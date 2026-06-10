@@ -1,5 +1,21 @@
 @import "tailwindcss";
-@import "../styles/tokens.css";
+@import "../styles/typographyTokens.css";
+@import "../styles/colorTokens.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
 
 @theme inline {
   --font-sans: var(--font-inter);
@@ -59,5 +75,32 @@
     font-size: var(--text-small);
     font-weight: var(--fw-regular);
     line-height: var(--lh-body);
+  }
+}
+
+
+@layer components {
+  .text-primary {
+    color: var(--color-text-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+
+  .text-accent {
+    color: var(--color-text-accent);
+  }
+
+  .bg-primary {
+    background-color: var(--color-bg-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-bg-secondary);
+  }
+
+  .bg-accent {
+    background-color: var(--color-bg-accent);
   }
 }

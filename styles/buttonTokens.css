@@ -1,0 +1,21 @@
+:root {
+    /* Primary button */
+    --button-primary-bg: var(--color-brand);
+    --button-primary-bg-hover: var(--color-brand-hover);
+    --button-primary-text: var(--color-white);
+
+    /* Secondary button */
+    --button-secondary-bg: var(--color-bg-secondary);
+    --button-secondary-bg-hover: var(--color-bg-tertiary);
+    --button-secondary-text: var(--color-text-primary);
+    --button-secondary-border: var(--color-border);
+
+    /* Ghost button */
+    --button-ghost-bg: transparent;
+    --button-ghost-bg-hover: var(--color-bg-secondary);
+    --button-ghost-text: var(--color-text-primary);
+
+    /* Text button */
+    --button-text-text: var(--color-brand);
+    --button-text-text-hover: var(--color-brand-hover);
+}
