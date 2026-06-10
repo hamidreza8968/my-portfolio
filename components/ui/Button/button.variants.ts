@@ -1,7 +1,7 @@
 import '../../../styles/buttonTokens.css'
 
 export const buttonBase =
-    "px-4 py-2 rounded-lg font-medium transition-colors duration-200";
+    "px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer";
 
 export const buttonVariants = {
     primary: `

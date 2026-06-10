@@ -2,6 +2,8 @@ import Navbar from "@/components/layout/Navbar";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import Hero from "@/components/layout/Hero";
+import myImage from "@/public/assets/5969626460223901116.jpg";
+import {HeroData} from "@/components/layout/Hero/Hero.types";
 
 
 const navigationItems = [
@@ -40,18 +42,49 @@ const navigationItems = [
         active: true,
         order: 5
     }
-]
+];
+
+const heroData: HeroData = {
+    role: "Senior Frontend Developer",
+    name: "Arya Abadi",
+    description:
+        "Building scalable web platforms, CMS-driven architectures, and design systems.",
+    image: myImage,
+    skills: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Storyblok",
+        "Storybook",
+        "Accessibility",
+        "Performance",
+        "Developer Experience",
+    ],
+    ctas: [
+        {
+            label: "View My Work",
+            href: "#work",
+            variant: "primary",
+        },
+        {
+            label: "Download CV",
+            href: "/cv.pdf",
+            variant: "secondary",
+        },
+    ]
+};
+
 
 export default async function Home() {
 
     return (
         <div>
-            <Navbar logo={{variant: 'text', text: "AA"}} navigationItems={navigationItems} className='bg-blue-500'/>
+            <Navbar logo={{variant: 'text', text: "AA"}} navigationItems={navigationItems} />
 
             <main>
-                <Section className="">
+                <Section>
                     <Container>
-                        <Hero/>
+                        <Hero heroData={heroData}/>
                     </Container>
                 </Section>
             </main>
