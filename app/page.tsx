@@ -65,11 +65,13 @@ const heroData: HeroData = {
             label: "View My Work",
             href: "#work",
             variant: "primary",
+            icon: "arrow-right",
         },
         {
             label: "Download CV",
             href: "/cv.pdf",
             variant: "secondary",
+            icon: "download",
         },
     ]
 };

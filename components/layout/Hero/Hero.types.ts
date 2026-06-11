@@ -1,10 +1,12 @@
 import {StaticImageData} from "next/image";
-import {ButtonVariant} from "@/components/ui/Button/Button.types";
+import { ButtonVariant } from "@/components/ui/Button/Button.types";
+import { IconName } from "@/components/ui/Icon/iconRegistry";
 
 export type HeroCTA = {
     label: string;
     href: string;
     variant?: ButtonVariant;
+    icon?: IconName;
 };
 
 export type HeroData = {

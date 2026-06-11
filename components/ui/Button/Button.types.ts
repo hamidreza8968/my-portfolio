@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type ButtonVariant =
     | "primary"
     | "secondary"
@@ -10,6 +12,7 @@ export type ButtonProps =
     onClick?: () => void;
     href?: never;
     label: string;
+    icon?: ReactNode;
     variant?: ButtonVariant;
 })
     | ({
@@ -17,5 +20,6 @@ export type ButtonProps =
     href: string;
     onClick?: never;
     label: string;
+    icon?: ReactNode;
     variant?: ButtonVariant;
 });

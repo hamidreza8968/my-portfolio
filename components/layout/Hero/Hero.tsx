@@ -2,7 +2,9 @@
 import Image from "next/image";
 import InlineList from "@/components/layout/Hero/InlineList";
 import Button from "@/components/ui/Button";
+import Icon from "@/components/ui/Icon";
 import {HeroProps} from "@/components/layout/Hero/Hero.types";
+
 
 export default function Hero({heroData, className}: HeroProps) {
     return (
@@ -16,7 +18,11 @@ export default function Hero({heroData, className}: HeroProps) {
                 />
                 <div className="flex gap-4">
                     {heroData.ctas?.map((cta) => (
-                        <Button key={cta.href} as="a" href={cta.href} label={cta.label} variant={cta.variant}/>
+                        <Button key={cta.href} as="a" href={cta.href} label={cta.label} variant={cta.variant} icon={
+                            cta.icon ? (
+                                <Icon name={cta.icon} size="md"/>
+                            ) : undefined
+                        }/>
                     ))}
                 </div>
             </div>
