@@ -21,6 +21,8 @@ Purpose: language- and repo-specific coding conventions used by humans and AI as
 
 6) Tests
 - Each public API should have at least one unit test.
+- Critical user flows require E2E coverage.
+- Test behavior, not implementation details.
 
 7) AI-specific guidance
 - When an AI assistant suggests code, prefer minimal diffs and include a short rationale. Mark anything requiring human review with "REVIEW REQUIRED".

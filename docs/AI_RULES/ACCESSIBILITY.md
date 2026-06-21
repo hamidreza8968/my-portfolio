@@ -1,6 +1,6 @@
 # Accessibility Rules
 
-Baseline: follow WCAG 2.1 AA where feasible.
+Baseline: follow WCAG 2.2 AA where feasible.
 
 1) Semantic markup
 - Use semantic HTML (button, nav, main, header, footer) and avoid relying on ARIA when native elements suffice.
