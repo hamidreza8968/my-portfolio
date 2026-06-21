@@ -1,12 +1,12 @@
-import { NavigationProps } from "@/components/layout/Navbar/Navigation/Navigation.types";
+import {NavigationProps} from "@/components/layout/Navbar/Navigation/Navigation.types";
 import NavigationItem from "@/components/layout/Navbar/Navigation/NavigationItem";
 
-export default function Navigation({ items, className }: NavigationProps) {
+export default function Navigation({items, className}: NavigationProps) {
     return (
         <ul className={`flex justify-between items-center gap-6 ${className}`}>
-            {items.map((item, index) => (
+            {items.map((item) => (
                 <li key={item.id}>
-                    <NavigationItem item={item} />
+                    <NavigationItem item={item}/>
                 </li>
             ))}
         </ul>
